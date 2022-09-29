@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href ="main.css" rel = "stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Урок 013 Основы HTML/CSS. Bootstrap</title>
+</head>
+<body>
+
+<style>
+body { background-color:#99FFCC; }
+</style>
+
+</br>
+
+<div class="mainpage" align = "center">
+ <div class="shadowbox">
+    <h1> Парсер сайта HH.ru</h1>
+ </div>
+</div>
+
+</br>
+
+<div class="mainpage" align = "center">
+    <h3> Варианты запросов</h3> 
+</div>
+
+
+<HR>
+
+<form action = "result1.html">
+  <div class = "mainpage" align = "center"> 
+  <div class="shadowbox">
+   <!-- Форма ввода данных для выборки вакансии с указанием места поиска-->
+   <h4>Форма поиска вакансий по указанным параметрам</h4>  
+        <!-- Ввод профессии-->
+    <input type = "text" class="inputtext" name = "Proff" value = "", placeholder = "Введите название профессии">   
+	
+	<!-- Выберем области поиска -->
+    <select name = "Country" class = "onestyle">
+     <option value = "All">Везде</option>
+     <option value = "Companyname">В названии компании</option>
+     <option value = "Vacancename">В названии вакансии</option>
+     
+    </select>
+	
+	
+	
+	
+    <!-- Кнопка отправки запроса-->
+    <input type = "submit" class="btn btn-info" value="Выбрать">
+   </div>	
+ </form>
+
+
+<HR>
+ 
+ <form action = "result2.html">
+  <div class = "mainpage" align = "center"> 
+  <div class="shadowbox">
+   <!-- Форма ввода данных для выборки 20 лучших городов по зарплате указанной профессии-->
+   <h4>Выбор лучших мест работы по выбранной специальности</h4>  
+    <!-- Выберем название страны -->
+    <select name = "Country" class = "onestyle">
+     <option value = "Россия">Россия</option>
+     <option value = "Казахстан">Казахстан</option>
+     <option value = "Беларусь">Беларусь</option>
+     <option value = "Грузия">Грузия</option>
+    </select>
+    <!-- Ввод профессии-->
+    <input type = "text" class="inputtext" name = "Proff" value = "", placeholder = "Введите название профессии">   
+    <!-- Кнопка отправки запроса-->
+    <input type = "submit" class="btn btn-info" value="Выбрать">
+   </div>	
+ </form>
+
+	
+	
+  <hr>
+<HR>
+
+</br>
+
+<table align = "center">
+ <tr> 
+  <td>
+   <form action="index.html">
+    <button type="submit" class = "btn btn-secondary">На главную</button>
+   </form>
+  </td> 
+ <tr>
+</table>
+
+</html>
